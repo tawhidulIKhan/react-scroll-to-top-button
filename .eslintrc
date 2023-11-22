@@ -18,8 +18,7 @@
   "rules": {
     "prettier/prettier": [
       "error",
-      {"endOfLine": "off"},
-      { "usePrettierrc": true, "endOfLine": "off" }
+      { "usePrettierrc": true, "endOfLine": "auto" }
     ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

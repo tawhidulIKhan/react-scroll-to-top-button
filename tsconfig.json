@@ -1,9 +1,11 @@
 {
-  "include": ["src", "declarations.d.ts"],
+  "include": ["src", "./jestconfig.json"],
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "**/*.scss"
   ],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -19,8 +21,12 @@
     "noUnusedParameters": true,
     "moduleResolution": "node",
     "jsx": "react",
+    "allowUmdGlobalAccess": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+     "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
   }
 }
