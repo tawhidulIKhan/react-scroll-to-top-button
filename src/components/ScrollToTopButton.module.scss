@@ -1,0 +1,32 @@
+.Button {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    width: 56px;
+    height: 56px;
+    z-index: 10;
+    background: #397cf8;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.Active{
+    display: flex;
+}
+
+.Rounded{
+    border-radius: 10px;
+}
+
+.Circle{
+    border-radius: 50%;
+}
+
+.Shadow{
+    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.25);
+}

@@ -1,3 +1,3 @@
-import ScrollToTop from './components/App';
+import ScrollToTop from './components/ScrollToTopButton'
 
 export { ScrollToTop }

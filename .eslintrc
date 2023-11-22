@@ -16,6 +16,11 @@
     "react-hooks"
   ],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {"endOfLine": "off"},
+      { "usePrettierrc": true, "endOfLine": "off" }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/no-non-null-assertion": "off",
